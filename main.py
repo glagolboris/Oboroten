@@ -2,7 +2,7 @@ import PyQt6
 from PyQt6 import QtCore, QtWidgets, QtGui
 from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton
 import sys
-import menu_window as main_menu
+import main_window as main_menu
 
 
 class MainWindow(QMainWindow):
