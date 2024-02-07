@@ -94,20 +94,6 @@
      <string>Широта</string>
     </property>
    </widget>
-   <widget class="QSpinBox" name="spinBox">
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>180</y>
-      <width>91</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);
-font: 21pt &quot;PT Sans&quot;;</string>
-    </property>
-   </widget>
    <widget class="QTextEdit" name="dolgota">
     <property name="geometry">
      <rect>
@@ -165,6 +151,19 @@ border: none</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="mashtab">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>180</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
   </widget>
