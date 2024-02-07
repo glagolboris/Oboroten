@@ -1,3 +1,5 @@
+
+
 from PyQt6 import QtCore, QtGui, QtWidgets
 import result
 
@@ -34,7 +36,7 @@ class Ui_MainWindow(object):
         self.spinBox.setStyleSheet("background-color: rgb(255, 255, 255);\n"
 "font: 21pt \"PT Sans\"; color:\"#2A3542\"")
         self.spinBox.setObjectName("spinBox")
-        self.spinBox.setValue(main.delta1)
+        self.spinBox.setValue(main.zoom)
         self.dolgota = QtWidgets.QTextEdit(parent=self.centralwidget)
         self.dolgota.setGeometry(QtCore.QRect(200, 260, 141, 31))
         self.dolgota.setStyleSheet("background-color: rgb(255, 255, 255); color:\"#2A3542\"")
@@ -67,5 +69,6 @@ class Ui_MainWindow(object):
         self.label_m_3.setText(_translate("MainWindow", "Широта"))
 
     def result(self):
-        res = result.Main(delta1=str(self.spinBox.value()), delta2=str(self.spinBox.value()), lattitude=self.dolgota.toPlainText(), longitude=self.shirota.toPlainText())
+        res = result.Main(zoom=str(self.spinBox.value()), lattitude=self.dolgota.toPlainText(), longitude=self.shirota.toPlainText())
         res.show_result(res.get_result())
+

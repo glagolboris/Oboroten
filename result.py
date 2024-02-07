@@ -4,9 +4,8 @@ import requests
 from PIL import Image
 
 class Main:
-    def __init__(self, delta1, delta2, longitude, lattitude):
-        self.delta1 = delta1
-        self.delta2 = delta2
+    def __init__(self, zoom, longitude, lattitude):
+        self.zoom = zoom
         self.longitude = longitude
         self.lattitude = lattitude
 
@@ -15,7 +14,7 @@ class Main:
         try:
             map_params = {
                 "ll": ",".join([self.longitude, self.lattitude]),
-                "spn": ",".join([self.delta1, self.delta2]),
+                "z": self.zoom,
                 "l": "map"
             }
 
@@ -30,3 +29,4 @@ class Main:
 
     def show_result(self, content):
         Image.open(content).show()
+

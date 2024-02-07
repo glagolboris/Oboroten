@@ -5,7 +5,7 @@ import sys
 import main_window as main_menu
 
 class Main:
-    delta1 = delta2 = 1
+    zoom = 1
     longitude = 0
     lattitude = 0
 
